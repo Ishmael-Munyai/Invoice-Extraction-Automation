@@ -10,7 +10,7 @@ class InvoicePage:
     rows = self.page.query_selector_all("table#invoiceTable tbody tr")
 
     for idx, row in enumerate(rows):
-      print(f"Processing row {idx}...")
+      print(f"Processing row {idx}")
 
       # Click the download link/button inside the row
       download_link = row.query_selector("a.download")
